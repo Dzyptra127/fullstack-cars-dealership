@@ -1,0 +1,40 @@
+=== Perintah cURL ===
+curl -X GET http://127.0.0.1:8000/api/cars/ \
+  -H "Content-Type: application/json"
+
+=== Hasil Keluaran ===
+{
+  "count": 4,
+  "makes": [
+    {
+      "make": "Toyota",
+      "models": [
+        {"name": "Avanza", "year": 2024},
+        {"name": "Fortuner", "year": 2024},
+        {"name": "Camry", "year": 2023}
+      ]
+    },
+    {
+      "make": "Honda",
+      "models": [
+        {"name": "Mobilio", "year": 2024},
+        {"name": "CR-V", "year": 2024},
+        {"name": "Civic", "year": 2023}
+      ]
+    },
+    {
+      "make": "Mitsubishi",
+      "models": [
+        {"name": "Xpander", "year": 2024},
+        {"name": "Pajero Sport", "year": 2024}
+      ]
+    },
+    {
+      "make": "Suzuki",
+      "models": [
+        {"name": "Ertiga", "year": 2024},
+        {"name": "XL7", "year": 2024}
+      ]
+    }
+  ]
+}
