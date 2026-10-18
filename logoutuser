@@ -1,0 +1,11 @@
+=== Perintah cURL ===
+curl -X POST http://127.0.0.1:8000/api/logout/ \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Token abc123xyz456" \
+  -d '{}'
+
+=== Hasil Keluaran ===
+{
+  "status": "success",
+  "message": "Logout berhasil"
+}
