@@ -1,0 +1,29 @@
+=== Perintah cURL ===
+curl -X GET "http://127.0.0.1:8000/api/dealers/state/Kansas/" \
+  -H "Content-Type: application/json"
+
+=== Hasil Keluaran ===
+{
+  "state": "Kansas",
+  "count": 2,
+  "dealers": [
+    {
+      "id": 11,
+      "name": "Topeka Auto Plaza",
+      "city": "Topeka",
+      "state": "Kansas",
+      "address": "123 Main St, Topeka, KS 66603",
+      "phone": "785-123-4567",
+      "email": "topeka@autoplaza.test"
+    },
+    {
+      "id": 12,
+      "name": "Wichita Car Center",
+      "city": "Wichita",
+      "state": "Kansas",
+      "address": "456 Broadway Ave, Wichita, KS 67202",
+      "phone": "316-987-6543",
+      "email": "wichita@carcenter.test"
+    }
+  ]
+}
