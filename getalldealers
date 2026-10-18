@@ -1,0 +1,31 @@
+=== Perintah cURL ===
+curl -X GET http://127.0.0.1:8000/api/dealers/ \
+  -H "Content-Type: application/json"
+
+=== Hasil Keluaran ===
+{
+  "count": 3,
+  "dealers": [
+    {
+      "id": 1,
+      "name": "Dealer Mobil Surabaya",
+      "address": "Jl. Raya Surabaya No. 123, Jawa Timur",
+      "phone": "031-123456",
+      "email": "surabaya@dealermobil.test"
+    },
+    {
+      "id": 2,
+      "name": "Dealer Mobil Jakarta",
+      "address": "Jl. Sudirman No. 45, Jakarta Pusat",
+      "phone": "021-987654",
+      "email": "jakarta@dealermobil.test"
+    },
+    {
+      "id": 3,
+      "name": "Dealer Mobil Bandung",
+      "address": "Jl. Asia Afrika No. 10, Bandung",
+      "phone": "022-555666",
+      "email": "bandung@dealermobil.test"
+    }
+  ]
+}
