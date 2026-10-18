@@ -1,0 +1,14 @@
+=== Perintah cURL ===
+curl -X GET http://127.0.0.1:8000/api/dealers/1/ \
+  -H "Content-Type: application/json"
+
+=== Hasil Keluaran ===
+{
+  "id": 1,
+  "name": "Dealer Mobil Surabaya",
+  "address": "Jl. Raya Surabaya No. 123, Jawa Timur",
+  "phone": "031-123456",
+  "email": "surabaya@dealermobil.test",
+  "description": "Dealer resmi kendaraan baru dan bekas terpercaya di Surabaya.",
+  "created_at": "2026-10-16T09:00:00Z"
+}
