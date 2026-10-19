@@ -1,14 +1,12 @@
 === Perintah cURL ===
-curl -X POST http://127.0.0.1:8000/api/login/ \
-  -H "Content-Type: application/json" \
-  -d '{
-    "username": "Dzyptra127",
-    "password": "password123"
-  }'
-
+curl -X POST http://127.0.0.1:8000/djangoapp/login \
+-H "Content-Type: application/json" \
+-d '{
+"userName": "Dzyptra127",
+"password": "kata_sandi123"
+}'
 === Hasil Keluaran ===
 {
-  "status": "success",
-  "message": "Login berhasil",
-  "token": "abc123xyz456"
+"userName": "Dzyptra127",
+"status": "Authenticated"
 }
