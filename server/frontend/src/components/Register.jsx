@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { Form, Button, Container, Card } from 'react-bootstrap';
 
 const Register = () => {
   const [formData, setFormData] = useState({
     username: '',
-    firstName: '',
-    lastName: '',
+    first_name: '',
+    last_name: '',
     email: '',
     password: ''
   });
@@ -18,38 +19,78 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Data Pendaftaran:', formData);
+    console.log('Data pendaftaran:', formData);
   };
 
   return (
-    <div style={{ maxWidth: '400px', margin: '2rem auto', padding: '2rem', border: '1px solid #ddd', borderRadius: '8px' }}>
-      <h2 style={{ textAlign: 'center' }}>Sign Up</h2>
-      <form onSubmit={handleSubmit}>
-        <div style={{ marginBottom: '1rem' }}>
-          <label>Username:</label>
-          <input type="text" name="username" value={formData.username} onChange={handleChange} required style={{ width: '100%', padding: '0.5rem', marginTop: '0.3rem' }} />
-        </div>
-        <div style={{ marginBottom: '1rem' }}>
-          <label>First Name:</label>
-          <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} required style={{ width: '100%', padding: '0.5rem', marginTop: '0.3rem' }} />
-        </div>
-        <div style={{ marginBottom: '1rem' }}>
-          <label>Last Name:</label>
-          <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} required style={{ width: '100%', padding: '0.5rem', marginTop: '0.3rem' }} />
-        </div>
-        <div style={{ marginBottom: '1rem' }}>
-          <label>Email:</label>
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required style={{ width: '100%', padding: '0.5rem', marginTop: '0.3rem' }} />
-        </div>
-        <div style={{ marginBottom: '1rem' }}>
-          <label>Password:</label>
-          <input type="password" name="password" value={formData.password} onChange={handleChange} required style={{ width: '100%', padding: '0.5rem', marginTop: '0.3rem' }} />
-        </div>
-        <button type="submit" style={{ width: '100%', padding: '0.7rem', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '4px', fontSize: '1rem' }}>
-          Register
-        </button>
-      </form>
-    </div>
+    <Container className="py-5">
+      <Card className="mx-auto" style={{ maxWidth: '450px' }}>
+        <Card.Body>
+          <Card.Title className="text-center mb-4">Pendaftaran</Card.Title>
+          
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className="mb-3">
+              <Form.Label>Nama Pengguna</Form.Label>
+              <Form.Control
+                type="text"
+                name="username"
+                placeholder="Nama Pengguna"
+                value={formData.username}
+                onChange={handleChange}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Nama Depan</Form.Label>
+              <Form.Control
+                type="text"
+                name="first_name"
+                placeholder="Nama Depan"
+                value={formData.first_name}
+                onChange={handleChange}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Nama Belakang</Form.Label>
+              <Form.Control
+                type="text"
+                name="last_name"
+                placeholder="Nama Belakang"
+                value={formData.last_name}
+                onChange={handleChange}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Email</Form.Label>
+              <Form.Control
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-4">
+              <Form.Label>Kata Sandi</Form.Label>
+              <Form.Control
+                type="password"
+                name="password"
+                placeholder="Kata Sandi"
+                value={formData.password}
+                onChange={handleChange}
+              />
+            </Form.Group>
+
+            <Button variant="primary" type="submit" className="w-100">
+              Daftar
+            </Button>
+          </Form>
+        </Card.Body>
+      </Card>
+    </Container>
   );
 };
 
