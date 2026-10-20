@@ -1,25 +1,33 @@
 === Perintah cURL ===
-curl -X GET http://127.0.0.1:8000/api/dealers/1/reviews/ \
-  -H "Content-Type: application/json"
-
+curl -X GET http://127.0.0.1:8000/djangoapp/fetchReviews/dealer/1 \
+-H "Content-Type: application/json"
 === Hasil Keluaran ===
 {
-  "dealer_id": 1,
-  "dealer_name": "Dealer Mobil Surabaya",
-  "reviews": [
-    {
-      "id": 1,
-      "user": "Dzyptra127",
-      "rating": 5,
-      "comment": "Pelayanan sangat baik, mobil sesuai deskripsi!",
-      "created_at": "2026-10-18T14:30:00Z"
-    },
-    {
-      "id": 2,
-      "user": "pengguna02",
-      "rating": 4,
-      "comment": "Proses cepat, hanya butuh waktu sedikit lebih lama untuk administrasi.",
-      "created_at": "2026-10-17T09:15:00Z"
-    }
-  ]
+"id_dealer": 1,
+"name": "Dealer Mobil Surabaya",
+"dealer": "Dealer Mobil Surabaya",
+"reviews": [
+  {
+    "id": 1,
+    "userName": "Dzyptra127",
+    "rating": 5,
+    "review": "Pelayanan sangat baik, mobil sesuai deskripsi",
+    "purchase": true,
+    "purchase_date": "2026-10-18",
+    "car_make": "Toyota",
+    "car_model": "Avanza",
+    "car_year": 2023"
+  },
+  {
+    "id": 2,
+    "userName": "pengguna02",
+    "rating": 4,
+    "review": "Prosesnya cepat, hanya butuh waktu sedikit lebih lama untuk administrasi",
+    "purchase": true,
+    "purchase_date": "2026-10-17",
+    "car_make": "Honda",
+    "car_model": "Brio",
+    "car_year": 2022
+  }
+]
 }
