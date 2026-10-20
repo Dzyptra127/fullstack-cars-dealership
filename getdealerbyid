@@ -13,4 +13,8 @@ curl -X GET http://127.0.0.1:8000/djangoapp/fetchDealer/dealer_id/1 \
 "lat": -7.291,
 "long": 112.791,
 "phone": "031-123456"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c15cd424aaaa24905d909986db4eba9ee4d02f4b

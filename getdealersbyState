@@ -33,4 +33,8 @@ curl -X GET http://127.0.0.1:8000/djangoapp/fetchDealers/Kansas \
     "email": "wichita@carcenter.test"
   }
 ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c15cd424aaaa24905d909986db4eba9ee4d02f4b

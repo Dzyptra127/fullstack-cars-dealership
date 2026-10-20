@@ -1,39 +1,71 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Hubungi Kami - Cars Dealership</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body { font-family: Arial; max-width: 800px; margin: 0 auto; padding: 20px; }
-    nav { background: #333; padding: 10px; margin-bottom: 20px; }
-    nav a { color: white; margin-right: 15px; text-decoration: none; }
-    nav a.active { color: #ffd700; font-weight: bold; }
-    .contact { border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
-    img { max-width: 200px; border-radius: 8px; margin: 10px 0; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami — Cars Dealership</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Berkas CSS Sendiri -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Bilah Navigasi -->
-  <nav>
-    <a href="About.html">Tentang Kami</a>
-    <a href="Contact.html" class="active">Hubungi Kami</a>
-  </nav>
+    <!-- Menu Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cars Dealership</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Contact.html">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <h1>Hubungi Kami</h1>
-  
-  <div class="contact">
-    <img src="contact.jpg" alt="Gambar Kontak">
-    
-    <h3>Informasi Kontak</h3>
-    <p><strong>Nama:</strong> Kholis Dinu Syahputra</p>
-    <p><strong>Email:</strong> Dzyptra127@example.com</p>
-    <p><strong>Telepon:</strong> +62 812 3456 7890</p>
-    <p><strong>Alamat:</strong> Surabaya, Jawa Timur, Indonesia</p>
-    
-    <h4>Jam Operasional</h4>
-    <p>Senin – Jumat: 09.00 – 17.00 WIB</p>
-    <p>Sabtu – Minggu: Tutup</p>
-  </div>
+    <div class="container py-4">
+        <h1 class="text-center mb-4">Hubungi Kami</h1>
+        <p class="text-center text-muted mb-5">Kami siap melayani kebutuhan Anda — silakan hubungi kami kapan saja</p>
+
+        <!-- Gambar Ilustrasi -->
+        <div class="text-center mb-5">
+            <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800" 
+                 alt="Kontak Cars Dealership" class="img-fluid rounded shadow">
+        </div>
+
+        <!-- Informasi Kontak -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-4">Informasi Kontak</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <strong>Nama:</strong> Kholis Dwi Setyaputra
+                            </li>
+                            <li class="mb-3">
+                                <strong>Telepon:</strong> +62 812-3456-7890
+                            </li>
+                            <li class="mb-3">
+                                <strong>Email:</strong> info@carsdealership.com
+                            </li>
+                            <li class="mb-3">
+                                <strong>Alamat:</strong> Surabaya, Jawa Timur, Indonesia
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

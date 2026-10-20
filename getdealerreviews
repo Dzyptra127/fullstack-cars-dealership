@@ -30,4 +30,8 @@ curl -X GET http://127.0.0.1:8000/djangoapp/fetchReviews/dealer/1 \
     "car_year": 2022
   }
 ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c15cd424aaaa24905d909986db4eba9ee4d02f4b

@@ -9,4 +9,8 @@ curl -X POST http://127.0.0.1:8000/djangoapp/login \
 {
 "userName": "Dzyptra127",
 "status": "Authenticated"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c15cd424aaaa24905d909986db4eba9ee4d02f4b
