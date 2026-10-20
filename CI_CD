@@ -1,0 +1,58 @@
+=== Alur Kerja GitHub Actions — CI/CD ===
+
+$ gh run view --run-id abc123xyz456 --verbose
+
+Run ID: abc123xyz456
+Nama: CI/CD Pipeline
+Waktu mulai: 2026-10-19 10:00:00 UTC
+Pencitra: ubuntu-latest
+
+● Pekerjaan: build
+  ✅ Langkah 1: Checkout repository
+  Mengkloning repositori...
+  HEAD berada di commit: abc123def
+  Selesaikan pengambilan kode — Berhasil
+
+  ✅ Langkah 2: Setup Python 3.11
+  Menginstal Python 3.11...
+  Lingkungan dikonfigurasi — Berhasil
+
+  ✅ Langkah 3: Install dependencies
+  Menginstal Django~=4.2...
+  Menginstal djangorestframework...
+  Semua dependensi terpasang — Berhasil
+
+  ✅ Langkah 4: Lint Python
+  Memeriksa gaya kode Python...
+  Tidak ada kesalahan — Lulus
+
+  ✅ Langkah 5: Lint JavaScript
+  Memeriksa gaya kode JavaScript...
+  Tidak ada kesalahan — Lulus
+
+  ✅ Langkah 6: Migrasi basis data
+  Menjalankan migrasi...
+  Migrasi diterapkan — Berhasil
+
+● Pekerjaan: test
+  ✅ Langkah 1: Checkout repository
+  Kode diperoleh — Berhasil
+
+  ✅ Langkah 2: Setup Python 3.11
+  Lingkungan siap — Berhasil
+
+  ✅ Langkah 3: Install dependencies
+  Dependensi diperbarui — Berhasil
+
+  ✅ Langkah 4: Jalankan pengujian
+  Menjalankan 8 uji...
+  8/8 lulus — OK
+
+● Pekerjaan: deploy
+  ✅ Langkah 1: Build & Publikasi
+  Membangun artefak...
+  Mengunggah ke lingkungan produksi...
+  Penyebaran selesai — Berhasil
+
+✅ Ringkasan: Semua pekerjaan berhasil dijalankan
+Durasi: 4 menit 25 detik
