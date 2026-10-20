@@ -1,11 +1,9 @@
 === Perintah cURL ===
-curl -X POST http://127.0.0.1:8000/api/logout/ \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Token abc123xyz456" \
-  -d '{}'
-
+curl -X GET http://127.0.0.1:8000/djangoapp/logout \
+-H "Content-Type: application/json" \
+-H "Authorization: Token abc123xyz456"
 === Hasil Keluaran ===
 {
-  "status": "success",
-  "message": "Logout berhasil"
+"userName": "",
+"status": "Logout berhasil"
 }

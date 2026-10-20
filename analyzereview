@@ -1,16 +1,14 @@
 === Perintah cURL ===
-curl -X POST http://127.0.0.1:8000/api/reviews/analyze/ \
-  -H "Content-Type: application/json" \
-  -d '{"review_text": "Layanan fantastis"}'
-
+curl -X GET "http://127.0.0.1:8000/analyze/Fantastic%20services" \
+-H "Content-Type: application/json"
 === Hasil Keluaran ===
 {
-  "review_text": "Layanan fantastis",
-  "sentiment": "positif",
-  "confidence_score": 0.96,
-  "sentiment_details": {
-    "positive_words": ["fantastis"],
-    "negative_words": [],
-    "overall_tone": "sangat positif"
-  }
+"review_text": "Fantastic services",
+"sentiment": "positive",
+"confidence_score": 0.98,
+"sentiment_detail": {
+  "positive_words": ["Fantastic"],
+  "negative_words": []
+},
+"overall_tone": "very positive"
 }
