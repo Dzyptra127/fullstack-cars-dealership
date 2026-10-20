@@ -1,31 +1,33 @@
 === Perintah cURL ===
-curl -X GET http://127.0.0.1:8000/api/dealers/ \
-  -H "Content-Type: application/json"
-
+curl -X GET http://127.0.0.1:8000/djangoapp/fetchDealers \
+-H "Content-Type: application/json"
 === Hasil Keluaran ===
 {
-  "count": 3,
-  "dealers": [
-    {
-      "id": 1,
-      "name": "Dealer Mobil Surabaya",
-      "address": "Jl. Raya Surabaya No. 123, Jawa Timur",
-      "phone": "031-123456",
-      "email": "surabaya@dealermobil.test"
-    },
-    {
-      "id": 2,
-      "name": "Dealer Mobil Jakarta",
-      "address": "Jl. Sudirman No. 45, Jakarta Pusat",
-      "phone": "021-987654",
-      "email": "jakarta@dealermobil.test"
-    },
-    {
-      "id": 3,
-      "name": "Dealer Mobil Bandung",
-      "address": "Jl. Asia Afrika No. 10, Bandung",
-      "phone": "022-555666",
-      "email": "bandung@dealermobil.test"
-    }
-  ]
+"total": 50,
+"dealers": [
+  {
+    "id": 1,
+    "short_name": "Dealer Mobil Surabaya",
+    "full_name": "Dealer Mobil Surabaya",
+    "address": "Jl. Raya Surabaya Pasang Surut 123",
+    "city": "Surabaya",
+    "state": "Jawa Timur",
+    "zip": "60111",
+    "lat": -7.291,
+    "long": 112.791,
+    "phone": "031-123456"
+  },
+  {
+    "id": 2,
+    "short_name": "Dealer Mobil Jakarta",
+    "full_name": "Dealer Mobil Jakarta",
+    "address": "Jl. Sudirman Pasang Surut 45",
+    "city": "Jakarta",
+    "state": "DKI Jakarta",
+    "zip": "10110",
+    "lat": -6.201,
+    "long": 106.816,
+    "phone": "021-987654"
+  }
+]
 }
